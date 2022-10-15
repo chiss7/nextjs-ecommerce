@@ -6,7 +6,6 @@ import { Store } from "../utils/Store";
 const Layout = ({ children, title }) => {
   const {
     state: { cart },
-    dispatch,
   } = useContext(Store);
   return (
     <>
@@ -17,7 +16,7 @@ const Layout = ({ children, title }) => {
       </Head>
       <div className="flex min-h-screen flex-col justify-between">
         <header>
-          <nav className="flex h-12 items-center justify-between shadow-md px-4">
+          <nav className="flex h-12 items-center px-4 justify-between shadow-md">
             <Link href="/">
               <a className="text-lg font-bold">Ecommerce</a>
             </Link>
